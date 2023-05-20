@@ -20,20 +20,38 @@ const App = () => {
         console.log(error);
       });
   }, []);
-
+  const tableHeaderStyle = {
+    textAlign: "center",
+    backgroundColor: "darkblue",
+    color: "white",
+    padding: "8px",
+  };
   return (
     <div className="container">
-      <h1>Top 10 Cryptocurrencies</h1>
+      <h1
+        style={{
+          textAlign: "center",
+          marginTop: "20px",
+          marginBottom: "10px",
+          color: "red",
+          fontStyle: "bold",
+        }}
+      >
+        Top 10 Cryptocurrencies
+      </h1>
       <br></br>
-      <table className="table table-hover table-bordered">
+      <table
+        className="table table-hover table-bordered"
+        style={{ width: "100%", borderCollapse: "collapse" }}
+      >
         <thead className="table-dark">
           <tr>
-            <th>Name</th>
-            <th>ID</th>
-            <th>Image</th>
-            <th>Symbol</th>
-            <th>Current Price(usd)</th>
-            <th>Total Volume</th>
+            <th style={tableHeaderStyle}>Name</th>
+            <th style={tableHeaderStyle}>ID</th>
+            <th style={tableHeaderStyle}>Image</th>
+            <th style={tableHeaderStyle}>Symbol</th>
+            <th style={tableHeaderStyle}>Current Price (USD)</th>
+            <th style={tableHeaderStyle}>Total Volume</th>
           </tr>
         </thead>
         <tbody>
