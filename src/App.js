@@ -34,7 +34,6 @@ const App = () => {
           marginTop: "20px",
           marginBottom: "10px",
           color: "red",
-          fontStyle: "bold",
         }}
       >
         Top 10 Cryptocurrencies
