@@ -1,7 +1,7 @@
 import "./App.css";
 import axios from "axios";
 import { useState, useEffect } from "react";
-import TableRow from "./Components/TableRow";
+import TableRow from "./Components/TableRow.js";
 
 const App = () => {
   let [data, setData] = useState([]);
